@@ -1,0 +1,640 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+$color1:#f99f06;
+.content1
+{
+    position: relative;
+}
+.content2
+{
+    position: absolute;
+    top:30px;
+    width:100%;
+    left:0;
+}
+.content2
+{
+    .row
+    {
+        .col-lg-8
+        {
+            .navbar
+            {
+                padding:0;
+                float: right;
+            }
+            .navbar
+            {
+                .nav-link
+                {
+                    color:#fff;
+                    text-transform: capitalize;
+                    padding-right: 25px;
+                    &:hover
+                    {
+                        color:$color1;
+                    }
+                }
+            }
+        }
+    }
+}
+.content3
+{
+    position: absolute;
+    top:40%;
+    left:10%;
+}
+.content3
+{
+    .row
+    {
+        .col-lg-12
+        {
+            .goals
+            {
+                p
+                {
+                    text-transform: uppercase;
+                    color:#fff;
+                    font-size: 22px;
+                    font-weight: 600;
+                }
+                h1
+                {
+                    font-size: 67px;
+                    color:#fff;
+                    text-transform:uppercase;
+                    font-weight: 700;
+                    text-shadow: 1px 6px 1px rgba(0, 0, 0, 0.35);
+                }
+                h1
+                {
+                    span
+                    {
+                        color:$color1;
+                    }
+                }
+                .text
+                {
+                    color:#fff;
+                    width:520px;
+                    padding-top:30px;
+                    font-size: 17px;
+                    padding-bottom:50px;
+                }
+                .btn
+                {
+                    @extend .buttons;
+                }
+            }
+        }
+    }
+}
+.content4
+{
+    background: #0c0c0c;
+    height:90px;
+}
+.content4
+{
+    .row
+    {
+        .col-lg-3
+        {
+            .news
+            {
+                background: $color1;
+                padding: 0 30px;
+                height:106px;
+                margin-top:-7px;
+            }
+            span
+            {
+                @extend .font;
+                color:#fff;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 22px;
+                position: relative;
+                top: 33px;
+                left: 22px;
+            }
+        }
+        .col-lg-9
+        {
+            p
+            {
+                color:#fff;
+                font-size: 14px;
+                padding-top:30px;
+            }
+        }
+    }
+}
+.content5
+{
+    background:url("../sportimg/sport6.jpg");
+    background-size: cover;
+}
+.content5
+{
+    .row
+    {
+        .col-lg-12
+        {
+            h1
+            {
+                @extend .text6;
+            }
+            .border2
+            {
+                @extend .border3;
+            }
+            .row
+            {
+                padding-bottom:50px;
+                .col-lg-3
+                {
+                    .text2
+                    {
+                        p
+                        {
+                            background: $color1;
+                            color:#fff;
+                            text-transform: uppercase;
+                            @extend .font;
+                            font-size: 17px;
+                            font-weight: 700;
+                            padding:7px 40px;
+                            border-radius: 5px;
+                            text-align: center;
+                        }
+                    }
+                    .photo
+                    {
+                        height:100px;
+                        overflow: hidden;
+                        z-index: 10;
+                        position: absolute;
+                    }
+                    .photo
+                    {
+                        img
+                        {
+                            width:97px;
+                            height:100%;
+                            z-index: 1000;
+                        }
+                    }
+                    .text3
+                    {
+                        padding:0 25px;
+                        background: $color1;
+                        color:#fff;
+                        line-height: 75px;
+                        position: relative;
+                        font-size: 50px;
+                        font-weight: 700;
+                        @extend .font;
+                        z-index: 1;
+                        width:40%;
+                        padding-left: 48px;
+                        margin-left: 82px;
+                        margin-top:12px;
+                        &:before
+                        {
+                            content:"";
+                            position: absolute;
+                            left:-60px;
+                            width:80px;
+                            height:100%;
+                            background: $color1;
+                            z-index: 1;
+                        }
+                        &:after
+                        {
+                            content:"";
+                            position: absolute;
+                            right:-15px;
+                            top:0;
+                            width:0;
+                            height:0;
+                            border-style: solid;
+                            border-width: 38px 0 37px 15px;
+                            border-color: transparent transparent transparent $color1;
+                        }
+                        
+                    }
+                    .photo2
+                    {
+                        height:100px;
+                        overflow: hidden;
+                        z-index: 10;
+                        position: absolute;
+                    }
+                    .photo2
+                    {
+                        img
+                        {
+                            width:97px;
+                            height:100%;
+                            z-index: 1000;
+                        }
+                    }
+                    .text4
+                    {
+                        padding:0 25px;
+                        background: $color1;
+                        color:#fff;
+                        line-height: 75px;
+                        position: relative;
+                        font-size: 50px;
+                        font-weight: 700;
+                        @extend .font;
+                        z-index: 1;
+                        width:40%;
+                        padding-left: 48px;
+                        margin-left: 82px;
+                        margin-top:12px;
+                        position: absolute;
+                        &:after
+                        {
+                            content:"";
+                            position: absolute;
+                            left:-60px;
+                            width:80px;
+                            height:100%;
+                            background: $color1;
+                            z-index: 1;
+                        }
+                        &:before
+                        {
+                            content:"";
+                            position: absolute;
+                            right:-15px;
+                            top:0;
+                            width:0;
+                            height:0;
+                            border-style: solid;
+                            border-width: 38px 0 37px 15px;
+                            border-color: transparent transparent transparent $color1;
+                        }
+                    }
+                }
+            }
+            .text5
+            {
+                text-align: center;
+                font-size: 14px;
+                margin-bottom:80px;
+            }
+            .button
+            {
+                text-align: center;
+                padding-bottom:100px;
+            }
+            .button
+            {
+            .btn
+                {
+                    @extend .buttons;
+                }
+            }
+        }
+    }
+}
+.content6
+{
+    background: url("../sportimg/sport9.jpg");
+    background-size: cover;
+}
+.content6
+{
+    .row
+    {
+        .col-lg-12
+        {
+            h1
+            {
+                @extend .text6;
+            }
+            .border2
+            {
+                @extend .border3;
+            }
+            .text7
+            {
+                h1
+                {
+                    @extend .text7;
+                    color:#fff;
+                    font-size: 22px;
+                }
+                .border4
+                {
+                    display: block;
+                    border-bottom:3px solid #fff;
+                    width:50px;
+                    margin:25px auto 0;
+                    margin-bottom:30px;
+                    margin-left: 458px;
+                }
+                p
+                {
+                    color:#fff;
+                    width:600px;
+                    position: relative;
+                    left:41%;
+                    font-size: 15px;
+                    margin:30px 0 50px 0;
+                    text-align: justify;
+                }
+                .btn
+                {
+                    background:#fff;
+                    text-transform: uppercase;
+                    color:$color1;
+                    font-weight: 600;
+                    font-size: 16px;
+                    border:0;
+                    border-radius: 20px;
+                    padding:10px 30px 10px 30px;
+                    margin-left: -65px;
+                    margin-bottom:226px;
+                }
+            }
+        }
+    }
+}
+.content7
+{
+    padding-bottom:100px;
+    .row
+    {
+        .col-lg-12
+        {
+            h1
+            {
+                @extend .text6;
+            }
+            .border5
+            {
+                @extend .border3;
+            }
+            .owl-carousel
+            {
+                .item
+                {
+                    .info
+                    {
+                        background: #212121;
+                        position: absolute;
+                        bottom:0;
+                        width:100%;
+                        transition: .5s;
+                        bottom:0;
+                        opacity:0;
+                    }
+                    .photo3
+                    {
+                        img
+                        {
+                            width:100%;
+                            position: relative;
+                            transition: .5s;
+                        }
+                        &:hover
+                        {
+                            .info
+                            {
+                                opacity:1;
+                            }
+                        }
+                    }
+                    .info
+                    {
+                        span
+                        {
+                            border-bottom-color: #212121;
+                            border-bottom: 45px solid #212121;
+                            border-left: 133px solid transparent;
+                            border-right: 133px solid transparent;
+                            display: block;
+                            left: 0;
+                            margin: 0 auto;
+                            position: absolute;
+                            right: 0;
+                            top: -45px;
+                            -webkit-transition: all 0.2s;
+                            transition: all 0.2s;
+                            width: 0;
+                        }
+                        p
+                        {
+                            color:#b5b5b5;
+                            font-size: 16px;
+                            margin-bottom:18px;
+                            @extend .font;
+                            text-align: center;
+                            text-transform: capitalize;
+                        }
+                        .p
+                        {
+                            border-top:1px solid #323232;
+                            padding-top:20px;
+                        }
+                    }
+                    .social
+                    {
+                        position: absolute;
+                        top:-100%;
+                        text-align: center;
+                        width:100%;
+                        transition: .5s;
+                    }
+                    .social
+                    {
+                        i
+                        {
+                            background: #212121;
+                            padding:10px;
+                            color:#fff;
+                            text-align: center;
+                            cursor: pointer;
+                            transition: .5s;
+                            &:hover
+                            {
+                                background: $color1;
+                            }
+                        }
+                    }
+                    .photo3
+                    {
+                        &:hover
+                        {
+                            .social
+                            {
+                                top:30%;
+                            }
+                        }
+                    }
+                }
+                .owl-dots
+                {
+                    display: none;
+                }
+                .owl-nav
+                {
+                    margin-top:50px;
+                    .owl-prev
+                    {
+                        margin:-2px;
+                        &:hover
+                        {
+                            background: #fff;
+                        }
+                        span
+                        {
+                            font-size: 35px;
+                            border: 1px solid #ccc;
+                            padding: 0px 20px 5px 20px;
+                            border-top-left-radius: 25px;
+                            border-bottom-left-radius: 25px;
+                            transition: .3s;
+                            &:hover
+                            {
+                                color:$color1;
+                            }
+                        }
+                    }
+                    .owl-next
+                    {
+                        margin:0;
+                        &:hover
+                        {
+                            background: #fff;
+                        }
+                        span
+                        {
+                            font-size: 35px;
+                            border: 1px solid #ccc;
+                            padding: 0px 20px 5px 20px;
+                            border-top-right-radius: 25px;
+                            border-bottom-right-radius: 25px;
+                            &:hover
+                            {
+                                color:$color1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.content8
+{
+    background: url("../sportimg/sport20.jpg");
+    background-size: cover;
+}
+.content8
+{
+    h1
+    {
+        @extend .text6;
+    }
+    .border5
+    {
+        @extend .border3;
+    }
+    .row
+    {
+        .col-lg-9
+        {
+            .points
+            {
+                background-color: rgba(255, 255, 255, 0.7);
+                border: 6px solid #f99f06;
+                border-radius: 6px;
+                font-size: 16px;
+            }
+            .points
+            {
+                table
+                {
+                    th
+                    {
+                        border-bottom:0;
+                        border-bottom:1px solid #ccc;
+                        text-transform: uppercase;
+                    }
+                    td
+                    {
+                        text-transform: uppercase;
+                    }
+                    tr
+                    {
+                        &:hover
+                        {
+                            background: $color1;
+                            th
+                            {
+                                color:#fff;
+                            }
+                            td
+                            {
+                                color:#fff;
+                            }
+                        }
+                    }
+                }
+            }
+            .btn
+            {
+                background: $color1;
+                text-transform: uppercase;
+                color:#fff;
+                font-weight: 600;
+                font-size: 16px;
+                border:0;
+                border-radius:0px;
+                padding:10px 30px 10px 30px;
+                margin-bottom:100px;
+            }
+        }
+    }
+}
+// classes to be extended
+.font
+{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.border3
+{
+    display: block;
+    border-bottom:3px solid $color1;
+    width:50px;
+    margin:25px auto 0;
+    margin-bottom:100px;
+}
+.text6
+{
+    @extend .font;
+    color:#212121;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 28px;
+    padding-top:50px;
+    font-weight:900;
+}
+.buttons
+{
+    background: $color1;
+    text-transform: uppercase;
+    color:#fff;
+    font-weight: 600;
+    font-size: 16px;
+    border:0;
+    border-radius: 20px;
+    padding:10px 30px 10px 30px;
+}

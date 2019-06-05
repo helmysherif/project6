@@ -1,0 +1,65 @@
+*
+{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+// start making grid system
+%grid
+{
+    float:left;
+    padding:10px;
+    background: #eee;
+    border:1px solid #aaa;
+    text-align: center;
+    font-weight: bold;
+    font-family: Tahoma;
+}
+$gridnum : 12;
+@for $i from 1 through 12 
+{
+    .col-#{$i}
+    {
+        width:(100% / ($gridnum / $i));
+        @extend %grid;
+    }
+}
+// end making grid system
+$socialList:facebook twitter youtube linkedin codepen;
+@each $social in $socialList {
+    .#{$social}
+    {
+        font-weight: bold;
+    }
+}
+//start making Map With Each
+$test:5;
+$myelement:(h1:50px,h2:40px,h3:30px,h4:20px,h5:10px);
+@each $element,$font in $myelement {
+    #{$element}{
+        font-size: $font * $test;
+    }
+}
+//end making Map With Each
+// start using functions
+$font : 10px;
+@function incFont($ele){
+    @return $ele + 10;
+}
+.class1
+{
+    font-size: incFont(10px);
+}
+.class2
+{
+    font-size: incFont(15px);
+}
+.class3
+{
+    font-size: incFont(20px);
+}
+.class4
+{
+    font-size: incFont(25px);
+}
+// end using functions

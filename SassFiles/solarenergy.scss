@@ -1,0 +1,382 @@
+$maincolor :rgba(146,201,56, 1);
+$mainfontsize:20px;
+$Margin:margin;
+$direction:ltr;
+$floatleft:left;
+$floatright:right;
+@if $direction == ltr{
+    $floatleft:left;
+    $floatright:right;
+}
+@else{
+    $floatleft:right;
+    $floatright:left;
+}
+body
+{
+    font-family: "lora";
+}
+.content .cont .col-lg-3 
+{
+    img
+    {
+    #{$Margin}-top:30px;
+    #{$Margin}-bottom:30px;
+    }
+    .icon
+    {
+        #{$Margin}-top:30px;
+        padding-right:20px;
+    }
+    .icon
+    {
+        i
+        {
+            font-size: $mainfontsize + 15;
+            float: $floatleft;
+            padding-top:7px;
+            padding-right:15px;
+        }
+    }
+    .social
+    {
+        #{$Margin}-top:30px;
+    }
+    .social
+    {
+        i 
+        {
+            padding:10px;
+            color:#fff;
+            cursor: pointer;
+        }
+    }
+}
+.content1
+{
+    background-color: $maincolor;
+    position: sticky;
+    top:0;
+    z-index:1000;
+    .navbar
+    {
+        .nav-item
+        {
+            padding-right:30px;
+            line-height:30px;
+        }
+        .nav-item
+        {
+            .nav-link
+            {
+                color:#fff;
+            }
+            .dropdown-toggle
+            {
+                line-height:50px;
+            }
+            .dropdown-menu
+            {
+                #{$Margin}-top:0px;
+                border-radius: 0;
+                padding: 0;
+                line-height: 30px;
+                width:250px;
+            }
+            &.active
+            {
+                background: #333;
+                padding-left:40px;
+            }
+            &.active
+            {
+                .nav-link
+                {
+                    color:#fff;
+                }
+            }
+        }
+    }
+}
+.cont2
+{
+    img 
+    {
+        height:500px;
+    }
+    .carousel-inner
+    {
+        position: relative;
+    }
+    .caption
+    {
+        @extend .transition;
+        position: absolute;
+        top: 40%;
+        left: 36%;
+        width: 503px;
+        color: #fff;
+    }
+    .caption
+    {
+        h1
+        {
+            @extend .font;
+            font-size: $mainfontsize + 26;
+            font-family:"lora";
+            text-transform: uppercase;
+            padding-bottom:20px;
+        }
+    }
+}
+.content2
+{
+    #{$Margin}-top:100px;
+    #{$Margin}-bottom:30px;
+    h2
+    {
+        @extend .font;
+        text-transform: uppercase;
+        font-family: "lora";
+        font-size: $mainfontsize + 14;
+        #{$Margin}-bottom:50px;
+    }
+    h2
+    {
+        .word
+        {
+            @extend .font;
+            color:$maincolor;
+            font-size:$mainfontsize + 38;
+            letter-spacing:16px;
+            position: relative;
+        }
+        .word:after
+        {
+            content:"";
+            position: absolute;
+            left: -97%;
+            height: 39px;
+            width: 100%;
+            bottom: 13px;
+            z-index: -1;
+            background: $maincolor;
+        }
+    }
+    p
+    {
+        line-height: 26px;
+        padding: 0;
+        margin: 0 0 20px 0;
+        color:#bbb;
+        #{$Margin}-bottom:62px;
+    }
+    .btn
+    {
+        @extend .font;
+        background: $maincolor;
+        border: 0;
+        border-radius: 0;
+        border-top-right-radius: 26px;
+        border-bottom-right-radius: 26px;
+        line-height: 34px;
+        text-transform: uppercase;
+        font-size: $mainfontsize - 7;
+    }
+    .btn:after
+    {
+        content: "";
+        position: absolute;
+        left: -97%;
+        height: 46px;
+        width: 100%;
+        z-index: -1;
+        bottom:0;
+        background: $maincolor;
+    }
+}
+.content3
+{
+    #{$Margin}-bottom:100px;
+    .text
+    {
+        border-bottom:1px solid #eee;
+        padding-bottom:15px;
+    }
+    img
+    {
+        float: $floatleft;
+        #{$Margin}-right:25px;
+    }
+    h3
+    {
+        @extend .font;
+    }
+    p
+    {
+        padding-left:93px;
+        font-size:$mainfontsize - 2;
+    }
+    a
+    {
+        @extend .transition;
+        @extend .font;
+        color: $maincolor;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding-left: 93px;
+        font-size: $mainfontsize - 5;
+    }
+    a:hover
+    {
+        color:#000;
+    }
+    .text2
+    {
+        border:0;
+        padding-top:20px;
+    }
+    .text3
+    {
+        text-align: right;
+    }
+    .text3
+    {
+        img
+        {
+            float: $floatright;
+        }
+        h3
+        {
+            padding-right: 105px;
+        }
+        a
+        {
+            padding-left: 0;
+            padding-right: 110px;
+        }
+        p
+        {
+            padding-left: 0;
+            width:241px;
+        }
+    }
+}
+.content4
+{
+    background: #f8f8f8;
+    #{$Margin}-bottom:100px;
+    h2
+    {
+        @extend .transition;
+        @extend .font;
+        text-transform: uppercase;
+        color:$maincolor;
+        padding-bottom:100px;
+        padding-top:50px;
+    }
+    h2
+    {
+        span
+        {
+            color:#000;
+        }
+    }
+    .col-lg-3
+    {
+        .services
+        {
+            @extend .transition;
+            padding: 30px 15px 30px 15px;
+        }
+        .services:hover
+        {
+            background: #fff;
+            box-shadow: 0 0 4px rgba(0, 0, 0, .4);
+        }
+        .services:hover
+        {
+            a
+            {
+                color:$maincolor;
+            }
+        }
+        .image
+        {
+            @extend .transition;
+            padding-bottom:15px;
+        }
+        a
+        {
+            @extend .transition;
+            @extend .font;
+            text-transform: capitalize;
+            font-size: $mainfontsize + 2;
+            text-decoration: none;
+            color:#000;
+        }
+    }
+}
+/* start countdown */
+.content5 
+{
+    background: url("../solarimages/solar5.jpg");
+    background-size:cover; 
+    #{$Margin}-bottom:100px;
+    h1
+    {
+        @extend .transition;
+        @extend .font;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: $mainfontsize + 13;
+        padding-bottom: 50PX;
+    }
+    .counting-sec
+    {
+        padding:40px 0;
+        width:100%;
+    }
+    .inner-width
+    {
+        max-width:1200px;
+        margin: auto;
+        display: flex;
+    }
+    .col
+    {
+        @extend .transition;
+        @extend .font;
+        flex: 1;
+        padding:20px;
+        color:#fff;
+        text-transform: capitalize;
+        font-size:$mainfontsize;
+        border:1px solid #fff;
+        #{$Margin}-bottom:60px;
+    }
+    .col
+    {
+        i
+        {
+            font-size:$mainfontsize * 2;
+            color:#333;
+        }
+    }
+    .num
+    {
+        font-size:$mainfontsize * 2;
+        margin:20px 0;
+    }
+}
+/* end countdown */
+/* classes to extend */
+.transition
+{
+    transition: .5s;
+    text-align: center;
+}
+.font
+{
+    font-weight: bold;
+}
